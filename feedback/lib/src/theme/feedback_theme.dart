@@ -129,7 +129,7 @@ class FeedbackThemeData {
   late final ColorScheme colorScheme;
 
   /// List of [ThemeExtension]s that can be used to extend the theme.
-  late final List<ThemeExtension> extensions;
+  late final Iterable<ThemeExtension<dynamic>> extensions;
 
   /// Creates a copy of the current [FeedbackThemeData] with the given
   /// optional fields replaced with the given values.
