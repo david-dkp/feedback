@@ -41,6 +41,7 @@ class FeedbackThemeData {
       this.bottomSheetDescriptionStyle = _defaultBottomSheetDescriptionStyle,
       this.bottomSheetTextInputStyle = _defaultBottomSheetTextInputStyle,
       this.sheetIsDraggable = true,
+      this.extensions = const <ThemeExtension>[],
       Brightness? brightness,
       Color? dragHandleColor,
       ColorScheme? colorScheme})
@@ -127,6 +128,9 @@ class FeedbackThemeData {
   /// [ColorScheme] on the feedback UI
   late final ColorScheme colorScheme;
 
+  /// List of [ThemeExtension]s that can be used to extend the theme.
+  late final List<ThemeExtension> extensions;
+
   /// Creates a copy of the current [FeedbackThemeData] with the given
   /// optional fields replaced with the given values.
   FeedbackThemeData copyWith({
@@ -141,6 +145,7 @@ class FeedbackThemeData {
     Color? dragHandleColor,
     Brightness? brightness,
     ColorScheme? colorScheme,
+    List<ThemeExtension>? extensions,
   }) {
     return FeedbackThemeData(
       background: background ?? this.background,
@@ -157,6 +162,7 @@ class FeedbackThemeData {
       dragHandleColor: dragHandleColor ?? this.dragHandleColor,
       brightness: brightness ?? this.brightness,
       colorScheme: colorScheme ?? this.colorScheme,
+      extensions: extensions ?? this.extensions,
     );
   }
 }

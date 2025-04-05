@@ -80,3 +80,6 @@ example/lib/generated_plugin_registrant.dart
 example/macos/Flutter/ephemeral
 example/macos/Flutter/GeneratedPluginRegistrant.swift
 Podfile.lock
+
+# FVM Version Cache
+.fvm/

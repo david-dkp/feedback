@@ -137,6 +137,7 @@ class FeedbackWidgetState extends State<FeedbackWidget>
     final ThemeData theme = ThemeData(
         brightness: feedbackThemeData.brightness,
         cardColor: feedbackThemeData.feedbackSheetColor,
+        extensions: feedbackThemeData.extensions,
         colorScheme: feedbackThemeData.colorScheme);
 
     // We need to supply a overlay because `TextField` and other widgets that
